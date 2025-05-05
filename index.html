@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Media/of.png" alt="Logo" class="logo-img"> <!-- Replace with your logo image -->
+                <span class="website-name">Website ni Dr. Stephen</span>
+            </div>
+            <div class="menu">
+                <a>Check out my other website</a>
+                <button class="menu-btn" onclick="toggleDropdown()">&#61;</button> <!-- The "=" symbol -->
+                <div class="dropdown">
+                    <a href="#home">Home</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#faculty">Faculty</a>
+                    <a href="#media">Media</a>
+                    <a href="contact.html">Contact Us</a> <!-- Link to contact page -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <section id="home">
+            <div class="section-box">
+                <h2>Home Page</h2>
+                <p>This is your home page. Edit it whatever you like.</p>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Information about the company, organization, or team goes here.</p>
+            <div class="section-multiplebox">
+                <div class="section-smallbox">
+                    <p>This is your home page. Edit it whatever you like.</p>
+                </div>
+                <div class="section-smallbox">
+                    <p>This is your home page. Edit it whatever you like.</p>
+                </div>
+                <div class="section-smallbox">
+                    <p>This is your home page. Edit it whatever you like.</p>
+                </div>
+            </div>
+            <div class="section-multiplebox2">
+                <p>This is your home page. Edit it whatever you like.</p>
+                <img src="Media/bobomatalino.jpg" alt="Dr. John Doe" class="imagephoto">
+                <img src="Media/bobomatalino.jpg" alt="Dr. John Doe" class="imagephoto">
+                <p>This is your home page. Edit it whatever you like.</p>
+                <p>This is your home page. Edit it whatever you like.</p>
+                <img src="Media/bobomatalino.jpg" alt="Dr. John Doe" class="imagephoto">
+            </div>
+        </section>
+
+        <section id="faculty">
+            <h2>Faculty</h2>
+            <p>Details about the faculty members, departments, and more.</p>
+            <button class="btn-primary" onclick="window.location.href='faculty.html';">See more</button>
+        </section>
+
+        <section id="media">
+            <h2>Media</h2>
+            <p>Media content, news, press releases, and more.</p>
+            <button class="btn-primary" onclick="window.location.href='media.html';">See more</button>
+        </section>
+
+        <section id="faqs">
+            <h2>FAQs</h2>
+            <p>Frequently Asked Questions will be listed here.</p>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+          
+          <!-- Top Section -->
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="Media/of.png" alt="Logo">
+              <span>Website ni Dr. Stephen</span>
+            </div>
+            <nav class="footer-nav">
+              <a href="#">Home</a>
+              <a href="#about-us">About Us</a>
+              <a href="#faculty">Faculty</a>
+              <a href="#media">Media</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+      
+          <hr class="footer-divider">
+      
+          <!-- Bottom Section -->
+          <div class="footer-bottom">
+            <div class="footer-credits">Made by Group ni Dr. Stephen | Powered by Robust</div>
+            <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
+            </div>
+          </div>
+      
+        </div>
+      </footer>      
+
+    <script src="script.js"></script> 
+
+</body>
+</html>
