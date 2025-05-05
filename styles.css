@@ -57,6 +57,15 @@ footer {
     gap: 20px;
 }
 
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
 .menu-btn {
     background: #272829;
     border-radius: 10px;
