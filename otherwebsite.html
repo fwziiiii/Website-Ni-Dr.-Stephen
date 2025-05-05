@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website namin</title>
+    <link rel="stylesheet" href="otherwebsitestyles.css">
+</head>
+<body>
+    <!-- para naay sound everytime maghover ka sa buttons -->
+    <audio id="hoverSound" src="Media/hoverbutton.mp3" preload="auto"></audio>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="Media/logo.png" alt="Website Logo" class="header-logo">
+                <div>
+                    <h1>Website po ito ni Dr. Stephen</h1>
+                    <p>testsetse</p>
+                    <p>testsetse</p>
+                </div>
+            </div>
+            <div class="header-links">
+                <a class="account-btn" onclick="toggleDropdown()">More buttons na pwede tuplukon</a>
+                <div class="dropdown-menu" id="accountDropdown">
+                    <button class="dropdown-btn" id="bgToggle">Sunshine</button>
+                    <button class="dropdown-btn" id="flipButton">Magic</button>
+                    <button class="dropdown-btn">Ambot</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!-- LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT SIDE LEFT  -->
+        <div class="left-part">
+            <div class="content-sides">
+                <button class="sidebar-btn" onclick="showContent('home')">Home</button>
+                <button class="sidebar-btn" onclick="showContent('about')">About</button>
+                <button class="sidebar-btn" onclick="showContent('faculty')">Faculty</button>
+                <button class="sidebar-btn" onclick="showContent('media')">Media</button>
+                <button class="sidebar-btn" onclick="showContent('contact')">Contact Us</button>
+            </div>
+
+            <div class="content-sides">
+                <button class="sidebar-btn" onclick="showContent('home')">Pwede pa mag-add</button>
+                <button class="sidebar-btn" onclick="showContent('faculty')">Ug buttons</button>
+                <button class="sidebar-btn" onclick="showContent('media')">or maskin unsa</button>
+            </div>
+
+            <div class="suggestion-box">
+                <textarea id="suggestionInput" placeholder="Write your suggestion here..." rows="6" cols="30"></textarea>
+                <button onclick="showPopup()">Submit Suggestion</button>
+            </div>
+        </div>
+
+        <!-- MIDDLE PART MIDDLE PART MIDDLE PART MIDDLE PART MIDDLE PART MIDDLE PART MIDDLE PART MIDDLE PART MIDDLE PART  -->
+        <div class="middle-part">
+            <!-- PARA SA HOME SECTION OR PAGE -->
+            <div id="home" class="content section">
+                <div class="section-box">
+                    <h2>Your Home</h2>
+                    <p>This is your home page.</p>
+                </div>
+
+                <div class="section-box">
+                    <h2>Mao ni ang section-box</h2>
+                    <img src="Media/keven.jpg" alt="Sample Image" class="content-image">
+                    <p>pwede nimo ni iedit ang text sa .html</p>
+                    <p>ang settings like fonts, size, and etc kay sa .css</p>
+                </div>
+
+                <div class="another-box">
+                    <p>.another-box ni sya. Pwede nimo ni iedit ang text sa .html... Ang settings like fonts, size, and etc kay sa .css</p>
+                </div>
+            </div>
+
+            <!-- PARA SA ABOUT SECTION OR PAGE -->
+            <div id="about" class="content section">
+                <div class="section-box">
+                    <h2>About Section</h2>
+                    <p>This is your About page.</p>
+                </div>
+            </div>
+
+            <!-- PARA SA FACULTY SECTION OR PAGE -->
+            <div id="faculty" class="content section">
+                <div class="section-box">
+                    <h1>Faculty Members</h1>
+                    <p>We are proud to introduce the esteemed faculty members who have significantly contributed to the growth and success of this organization. These dedicated individuals have not only shared their knowledge and expertise but have also helped lay the foundation for the institution’s achievements. Their innovative teaching methods, relentless pursuit of academic excellence, and commitment to student development have shaped the organization into what it is today. With years of experience, a passion for education, and a collaborative mindset, these faculty members have been pivotal in driving our mission forward. Their tireless contributions continue to inspire both current students and future generations, making them a vital part of the organization’s legacy.</p>
+                </div>
+                
+                <div class="section-box">
+                    <h2>Dr. Stephen Louise Escanilla PLS, DNT, BE, IN, LVE, WTH, SME, ONE, ELS</h2>
+                    <img src="Media/Stephen.jpg" alt="Sample Image" class="content-image">
+                    <h3>About me:</h3>
+                    <p>Date of Birth: April 9, 1993</p>
+                    <p>Sex: Once a month</p>
+                    <p>Marital Status: Married</p>
+                    <p>Nationality: Fil/American</p>
+                    <p>Motto: Kung dili ako, ayaw nalang</p>
+                    <p>Weakness: Selos, Can't  Swim</p>
+                    <p>Strength: Age gap, Polite, Self-aware</p>
+                </div>
+
+                <div class="section-box">
+                    <h2>Engr. Fawzan Alsaber D. Alaman RCE, PE, CE</h2>
+                    <img src="Media/Fawzan.png" alt="Sample Image" class="content-image">
+                    <h3>About me:</h3>
+                    <p>Date of Birth: February 2, 2005</p>
+                    <p>Sex: Depende sa mood</p>
+                    <p>Marital Status: Widowed</p>
+                    <p>Nationality: Japanese/Filipino</p>
+                    <p>Motto: tralalero tropa lang</p>
+                    <p>Weakness: Ma seen zone</p>
+                    <p>Strength: Right hand</p>
+                </div>
+
+                <div class="section-box">
+                    <h2>John Ramfael F. Belardo CEO, COO, CFO, CTO</h2>
+                    <img src="Media/Belardo.jpg" alt="Sample Image" class="content-image">
+                    <h3>About me:</h3>
+                    <p>Date of Birth: March 9, 2006</p>
+                    <p>Sex: Twice a Week</p>
+                    <p>Marital Status: Umaasa</p>
+                    <p>Nationality: Filipino</p>
+                    <p>Motto: Ilang beses paba akong magpaparinig upang ako'y iyong pansinin?</p>
+                    <p>Weakness: Friend zone</p>
+                    <p>Strength: Marunong lumangoy</p>
+                </div>
+
+                <div class="section-box">
+                    <h2>Prof. Gandon Kitay PhD</h2>
+                    <img src="Media/Gandon.jpg" alt="Sample Image" class="content-image">
+                    <h3>About me:</h3>
+                    <p>Date of Birth: December 21, 2005</p>
+                    <p>Sex: Tara</p>
+                    <p>Marital Status: Single</p>
+                    <p>Nationality: Filipino</p>
+                    <p>Motto: Dating high honor, ngayon high nalang</p>
+                    <p>Weakness: siya</p>
+                    <p>Strength: lumilipad</p>
+                </div>
+
+                <div class="section-box">
+                    <h2>Dr. Josua Jadraque Devibar PhD in Mobile Legends</h2>
+                    <img src="Media/Devibar.jpg" alt="Sample Image" class="content-image">
+                    <h3>About me:</h3>
+                    <p>Date of Birth: July 21, 1998</p>
+                    <p>Sex: Male</p>
+                    <p>Marital Status: NGSB</p>
+                    <p>Nationality: Korean</p>
+                    <p>Motto: 가라앉아 녹아 가도록 둘만의 하늘이 펼쳐지는 밤에</p>
+                    <p>Weakness: 없음</p>
+                    <p>Strength: 역도 선수</p>
+                </div>
+            </div>
+
+            <!-- PARA SA HELP SECTION OR PAGE -->
+            <div id="media" class="content section">
+                <div class="section-box">
+                    <h2>Media Section</h2>
+                    <p>This is where your photos will be.</p>
+                </div>
+                <div class="another-box">
+                    <p>kung magbutang kag daghan pictures in one div, gamita ang forpicture-box then tig 4,8,12,16 lang para dili bungkig... parehas ani sa ubos oh</p>
+                </div>
+                <div class="forpicture-box">
+                    <img src="Media/Fawzan.png" alt="Sample Image" class="content-image">
+                    <img src="Media/funda.jpg" alt="Sample Image" class="content-image">
+                    <img src="Media/pic1.jpg" alt="Sample Image" class="content-image">
+                    <img src="Media/pic2.jpg" alt="Sample Image" class="content-image">
+                    <img src="Media/pic3.jpg" alt="Sample Image" class="content-image">
+                    <img src="Media/devibaryawn.jpg" alt="Sample Image" class="content-image">
+                    <img src="Media/bobomatalino.jpg" alt="Sample Image" class="content-image">
+                    <img src="Media/pic4.jpg" alt="Sample Image" class="content-image">
+                </div>
+            </div>
+
+            <!-- PARA SA CONTACT SECTION OR PAGE -->
+            <div id="contact" class="content section">
+                <div class="section-box">
+                    <h2>Contact Section</h2>
+                    <p>This is your Contact page.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE RIGHT SIDE  -->
+        <div class="right-part">
+            <div class="content-sides">
+                <img src="Media/pipino.jpg" alt="Sample Image" class="content-imageright">
+                <h3>Get this now!</h3>
+                <p>For a low low price of</p>
+                <p>5$ and you can get this</p>
+                <p>limited PIPIMO!</p>
+            </div>
+            <div class="content-sides">
+                <video width="200" height="200" autoplay muted loop>
+                    <source src="Media/devsbuhok.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                <h3>Viral now on youjitube!</h3>
+                <p>#supersaiyan #goku</p>
+                <p>#catvideos #viral</p>
+                <p>#fyyyyyyyyyyyyyyp</p>
+            </div>
+            <div class="content-sides">
+                <video width="200" height="200" autoplay muted loop>
+                    <source src="Media/yawyaw.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                <p>Usa ka globe prepaid user</p>
+                <p>na wad-an ug net, nagyawyaw!</p>
+                <p>Ngano wala may net ang globe?! Abangan ang uban pang detalye</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <h3>Luh? suggestion amp. edi ikaw gumawa ng website</h3>
+            <p>kupal ka pala boss e</p>
+            <h4>the developers rn:</h4>
+            <img src="Media/devs.jpg" alt="Sample Image" width="300" height="380">
+            <span class="close-btn" onclick="closePopup()">X</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Hot single tito(s) in your area right now! - Ito po ang foot ni dr. stephen</p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById("accountDropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+
+        // Function to show and hide content based on the button clicked
+function showContent(section) {
+    // Get all sections
+    const sections = document.querySelectorAll('.section');
+    
+    // SET TO HIDE ANG TANAN SECTION
+    sections.forEach(function (sec) {
+        sec.style.display = 'none';
+    });
+    
+    // GINA SHOW ANG PAGE SA PAGE IMONG GIPILI
+    const selectedSection = document.getElementById(section);
+    if (selectedSection) {
+        selectedSection.style.display = 'block';
+    }
+
+    // SMOOTH SCROLLING
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// ALWAYS GINA SHOW ANG HOME PAGE
+document.addEventListener("DOMContentLoaded", function() {
+    showContent('home');
+});
+
+// MUGAWAS ANG POPUP
+function showPopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "flex";
+}
+
+// EXIT POPUP
+function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+}
+
+const buttons = document.querySelectorAll('button');
+const hoverSound = document.getElementById('hoverSound');
+
+buttons.forEach(button => {
+  button.addEventListener('mouseenter', () => {
+    hoverSound.currentTime = 0; // Restart sound if hovered repeatedly
+    hoverSound.play();
+  });
+});
+
+// PICTURE NILA STEPHEN HAHAHAHAHAHAHAHAHAHAHA
+const bgToggle = document.getElementById('bgToggle');
+const bgElements = document.querySelectorAll('.main-content, .left-part, .right-part');
+const contentElements = document.querySelectorAll('.content, .content-sides, .suggestion-box');
+const opacityElements = document.querySelectorAll('.section-box, .another-box, .forpicture-box, .suggestion-box textarea');
+
+let backgroundActive = false;
+
+bgToggle.addEventListener('click', () => {
+  backgroundActive = !backgroundActive;
+
+  bgElements.forEach(element => {
+    if (backgroundActive) {
+      element.style.backgroundImage = "url('Media/devs.jpg')";
+      element.style.backgroundColor = "transparent";
+    } else {
+      element.style.backgroundImage = "none";
+      element.style.backgroundColor = "#f0f2f5";
+    }
+  });
+
+  contentElements.forEach(element => {
+    if (backgroundActive) {
+      element.style.backgroundColor = "rgba(255, 255, 255, 0.45)";
+    } else {
+      element.style.backgroundColor = "white";
+    }
+  });
+
+  opacityElements.forEach(element => {
+    if (backgroundActive) {
+      element.style.backgroundColor = "rgba(255, 255, 255, 0.45)";
+    } else {
+      element.style.backgroundColor = "rgba(249, 249, 249, 1)";
+    }
+  });
+});
+
+// pang upside down sa website
+const flipButton = document.getElementById('flipButton');
+let isFlipped = false;
+
+flipButton.addEventListener('click', () => {
+  isFlipped = !isFlipped;
+  if (isFlipped) {
+    document.body.style.transform = 'rotate(180deg)';
+  } else {
+    document.body.style.transform = 'rotate(0deg)';
+  }
+});
+    </script>
+</body>
+</html>
