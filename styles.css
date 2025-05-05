@@ -58,12 +58,12 @@ footer {
 }
 
 .menu a {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background-color 0.3s;
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
 }
 
 .menu-btn {
@@ -441,8 +441,8 @@ section p {
   }
 
   .member-photo img {
-    width: 150px;
-    height: 250px;
+    width: 220px;
+    height: 300px;
     border-radius: 10px;
     margin-right: 20px;
     background: #333;
@@ -453,6 +453,7 @@ section p {
   }
   
   .member-info h2 {
+    font-size: 20px;
     margin-top: 0;
     color: #a78bfa;
   }
