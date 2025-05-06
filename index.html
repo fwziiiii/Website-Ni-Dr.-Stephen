@@ -3,79 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Main Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <img src="Media/logo.png" alt="Logo" class="logo-img"> <!-- Replace with your logo image -->
+                <img src="Media/logo.png" alt="Logo" class="logo-img">
                 <span class="website-name">Website ni Dr. Stephen</span>
             </div>
             <div class="menu">
-                <a href="otherwebsite.html">Check out my other website</a>
-                <button class="menu-btn" onclick="toggleDropdown()">&#61;</button> <!-- The "=" symbol -->
+                <a>Check out my other website</a>
+                <button class="menu-btn" onclick="toggleDropdown()">&#61;</button>
                 <div class="dropdown">
-                    <a href="#home">Home</a>
-                    <a href="#about-us">About Us</a>
-                    <a href="#faculty">Faculty</a>
-                    <a href="#media">Media</a>
-                    <a href="contact.html">Contact Us</a> <!-- Link to contact page -->
+                    <a href="index.html">Home</a>
+                    <a href="index.html#faculty">Faculty</a>
+                    <a href="index.html#about-us">About Us</a>
+                    <a href="index.html#media">Media</a>
+                    <a href="contact.html">Contact Us</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="content">
-        <section id="home">
-            <div class="section-box">
-                <h2>Home Page</h2>
+  <div class="main-page">
+      <div class="section-box">
+        <h1>Life Below the <span class="highlight">Surface</span></h1>
+        <p class="intro">Short introduction to Marine Biology!</p>
+        <p class="intro">Made by group of Dr. Stephen</p>
+        <p class="intro">dis iz subject to change</p>
+        <img src="Media/butanding.png" class="floating-image" alt="Decoration">
+     </div>
+    <div class="main-content">
+      <section id="faculty">
+        <div class="Faculty-part">
+          <h1>Meet the Coral <span class="highlight">Council</span></h1>
+          <p class="intro">Welcome to the vibrant heart of our marine biology community — the Coral Council! These brilliant minds are the guardians of knowledge, the mentors of future ocean explorers, and the guiding lights beneath the waves. With expertise as deep as the sea and a passion for discovery, they’ve helped shape the tides of learning and innovation.</p>
+          <p class="intro">From decoding dolphin chatter to nurturing coral conservation efforts, each member of the Coral Council brings a unique spark to our academic reef. Get to know the educators who make waves — both in the classroom and out at sea.</p>
+          <button class="btn-primary" onclick="window.location.href='faculty.html';">Get to know us</button>
+          <img src="Media/corals.png" class="floating-image2" alt="Decoration">
+        </div>
+      </section>
+      <section id="about-us">
+        <div class="AboutUs-part">
+          <h1>Dive into the <span class="highlight">Unkown</span></h1>
+          <p class="intro">Beneath the shimmer of the waves lies a world bursting with wonder — a living tapestry of color, movement, and mystery. Marine Biology is your compass to this hidden realm, where glowing jellyfish drift like lanterns, coral reefs hum with life, and ancient sea creatures still roam the depths.</p>
+          <p class="intro">As a marine biologist in the making, you won’t just study the ocean — you’ll listen to its rhythms, protect its fragile beauty, and unlock its secrets one discovery at a time. So take a deep breath, grab your curiosity, and dive in the ocean is waiting for you.</p>
+          <div class="section-multiplebox">
+            <div class="section-smallbox">
                 <p>This is your home page. Edit it whatever you like.</p>
             </div>
-        </section>
-
-        <section id="about-us">
-            <h2>About Us</h2>
-            <p>Information about the company, organization, or team goes here.</p>
-            <div class="section-multiplebox">
-                <div class="section-smallbox">
-                    <p>This is your home page. Edit it whatever you like.</p>
-                </div>
-                <div class="section-smallbox">
-                    <p>This is your home page. Edit it whatever you like.</p>
-                </div>
-                <div class="section-smallbox">
-                    <p>This is your home page. Edit it whatever you like.</p>
-                </div>
+            <div class="section-smallbox">
+                <p>This is your home page. Edit it whatever you like.</p>
             </div>
-            <div class="section-multiplebox2">
+            <div class="section-smallbox">
                 <p>This is your home page. Edit it whatever you like.</p>
-                <img src="Media/bobomatalino.jpg" alt="Dr. John Doe" class="imagephoto">
-                <img src="Media/bobomatalino.jpg" alt="Dr. John Doe" class="imagephoto">
-                <p>This is your home page. Edit it whatever you like.</p>
-                <p>This is your home page. Edit it whatever you like.</p>
-                <img src="Media/bobomatalino.jpg" alt="Dr. John Doe" class="imagephoto">
             </div>
-        </section>
+          </div>
 
-        <section id="faculty">
-            <h2>Faculty</h2>
-            <p>Details about the faculty members, departments, and more.</p>
-            <button class="btn-primary" onclick="window.location.href='faculty.html';">See more</button>
-        </section>
-
-        <section id="media">
-            <h2>Media</h2>
-            <p>Media content, news, press releases, and more.</p>
-            <button class="btn-primary" onclick="window.location.href='media.html';">See more</button>
-        </section>
-
-        <section id="faqs">
-            <h2>FAQs</h2>
-            <p>Frequently Asked Questions will be listed here.</p>
-        </section>
+          <h2>What is <span class="highlight">BS in Marine Biology?</span></h2>
+          <p class="intro p-left">A Bachelor of Science in Marine Biology is an undergraduate degree focused on the study of marine life and ocean ecosystems. It combines biology, oceanography, ecology, chemistry, and environmental science to explore the rich diversity of organisms that inhabit our seas — from microscopic plankton to massive whales, and everything in between. Students in this program gain hands-on experience through lab work, field research, and even dives into coastal or deep-sea environments.</p>
+          
+          <h2>Why is Marine Biology <span class="highlight">Important?</span></h2>
+          <p class="intro p-left">The ocean covers over 70% of our planet, supports nearly all life on Earth, and plays a crucial role in regulating climate, producing oxygen, and feeding billions of people. Studying marine biology is essential because:</p>
+          
+          <div class="section-multiplebox2">
+              <p class="intro">It helps us understand and protect marine ecosystems threatened by pollution, climate change, and overfishing.</p>
+              <img src="Media/bobomatalino.jpg" alt="Dr. John Doe" class="imagephoto">
+              <img src="Media/bobomatalino.jpg" alt="Dr. John Doe" class="imagephoto">
+              <p class="intro">It contributes to medical and scientific discoveries, such as new antibiotics or sustainable food sources.</p>
+              <p class="intro">It deepens our understanding of Earth’s climate systems and how human activity affects them. In short: Marine biology is at the heart of ocean conservation and the health of our planet.</p>
+              <img src="Media/bobomatalino.jpg" alt="Dr. John Doe" class="imagephoto">
+          </div>
+        </div> 
+      </section>
+      <section id="media">
+        <div class="Media-part">
+          <h1>Explore the Digital <span class="highlight">Reef</span></h1>
+          <p class="intro">Welcome to the Digital Reef — a vibrant hub where science, stories, and creativity come to life! Dive into a colorful ecosystem of media content, from ocean documentaries and faculty features to behind-the-scenes dev moments and quirky sea-worthy memes.</p>
+          <p class="intro">Just like a real reef, this space is full of surprises — rich with knowledge, teeming with inspiration, and always evolving. So swim around, click through, and discover the pulse of our marine-minded community, one byte at a time.</p>
+          <button class="btn-primary" onclick="window.location.href='media.html';">Explore</button>
+      </div>  
+      </section>
     </div>
+  </div>
 
     <footer class="site-footer">
         <div class="footer-container">
@@ -107,7 +119,7 @@
           </div>
       
         </div>
-      </footer>      
+      </footer>    
 
     <script src="script.js"></script> 
 
