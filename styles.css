@@ -131,8 +131,8 @@ footer {
 
 .imagephoto {
     position: relative;
-    height: 400px;
-    width: 250px;
+    height: 380px;
+    width: 350px;
 }
 
 .section-box {
@@ -298,23 +298,28 @@ section p {
     padding-top: 80px;
   }
 
-.AboutUs-part, .Faculty-party {
-  padding-top: 150px;
-  padding-bottom: 100px;
-}
+  .AboutUs-part {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
 
-.Media-part {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+  .Faculty-party {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
 
-.AboutUs-part h2 {
-  text-align: justify;
-}
+  .Media-part {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
-.p-left {
-  text-align: justify;
-}
+  .AboutUs-part h2 {
+    text-align: justify;
+  }
+
+  .p-left {
+    text-align: justify;
+  }
 
   .main-content {
     padding-top: 100px;
@@ -326,6 +331,7 @@ section p {
     font-size: 72px;
     margin-bottom: 20px;
   }
+
 /* STYLES SA FACULTY.HTML MEDIA.HTML CONTACT.HTML STYLES SA FACULTY.HTML MEDIA.HTML CONTACT.HTML STYLES SA FACULTY.HTML MEDIA.HTML CONTACT.HTML */
 .other-page {
     background-color: #111;
@@ -571,11 +577,6 @@ section p {
     filter: brightness(.5) saturate(0) contrast(1.2) blur(1px);
 }
 
-.pagination-buttons {
-    margin-top: 20px;
-    text-align: center;
-}
-
 
 .floating-image {
   position: fixed; /* Use 'absolute' if you want it relative to a parent */
@@ -596,3 +597,5 @@ section p {
   pointer-events: none; /* Optional: lets clicks pass through */
   opacity: 0.8; /* Optional: some transparency */
 }
+
+
