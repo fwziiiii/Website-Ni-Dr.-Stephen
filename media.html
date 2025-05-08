@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
+    <title>Life Below the Surface</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
                 <span class="website-name">Website ni Dr. Stephen</span>
             </div>
             <div class="menu">
-                <a>Check out my other website</a>
+                <a href="otherwebsite.html">Check out my other website</a>
                 <button class="menu-btn" onclick="toggleDropdown()">&#61;</button> <!-- The "=" symbol -->
                 <div class="dropdown">
                   <a href="index.html">Home</a>
@@ -35,7 +35,7 @@
           <p class="intro">We invite you to dive in, stay curious, and discover the intersection of innovation and the wonders of the sea.</p>
             
         <section class="photo-section">
-            <div class="photo-container">
+            <div class="photo-container" id="photoBox">
 
                     <div class="photo">
                         <div class="photo-background" style="background-image: url(Media/pic1.jpg);"></div>
@@ -62,8 +62,14 @@
                         <div class="photo-background" style="background-image: url(Media/bobomatalino.jpg);"></div>
                     </div>
 
-             </div>
+            </div>
         </section>
+
+        <div class="pagination-buttons">
+          <button onclick="previousPage()" class="btn-primary">Previous</button>
+          <button onclick="nextPage()" class="btn-primary">Next</button>
+        </div>
+
         </div>
 
     </div>
