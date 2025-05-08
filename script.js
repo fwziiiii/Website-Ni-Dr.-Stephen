@@ -40,55 +40,60 @@ function revealOnScroll() {
     }
 
     const images = [
+        'Media/pic4.jpg',
+        'Media/pic1.jpg',
+        'Media/pic2.jpg',
+        'Media/pic3.jpg',
+        'Media/funda.jpg',
+        'Media/keven.jpg',
+        'Media/Stephen.jpg',
+        'Media/devibaryawn.jpg',
         'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-        'Media/bobomatalino.jpg',
-    ];
-    
-    let currentPage = 0;
-    const itemsPerPage = 8;
-    
-    function renderImages() {
+        'Media/Belardo.jpg',
+        'Media/Devibar.jpg',
+        'Media/Fawzan.png',
+        'Media/devs.jpg',
+        'Media/Gandon.jpg',
+        'Media/pipino.jpg',
+        'Media/logo.png'
+      ];
+      
+      let currentPage = 0;
+      const itemsPerPage = 8;
+      
+      function renderImages() {
         const photoBox = document.getElementById('photoBox');
         photoBox.innerHTML = '';
-    
+      
         const start = currentPage * itemsPerPage;
         const end = start + itemsPerPage;
         const pageImages = images.slice(start, end);
-    
+      
         pageImages.forEach(src => {
-            const img = document.createElement('img');
-            img.src = src;
-            photoBox.appendChild(img);
+          const photoDiv = document.createElement('div');
+          photoDiv.className = 'photo';
+      
+          const bgDiv = document.createElement('div');
+          bgDiv.className = 'photo-background';
+          bgDiv.style.backgroundImage = `url(${src})`;
+      
+          photoDiv.appendChild(bgDiv);
+          photoBox.appendChild(photoDiv);
         });
-    }
-    
-    function nextPage() {
+      }
+      
+      function nextPage() {
         if ((currentPage + 1) * itemsPerPage < images.length) {
-            currentPage++;
-            renderImages();
+          currentPage++;
+          renderImages();
         }
-    }
-    
-    function previousPage() {
+      }
+      
+      function previousPage() {
         if (currentPage > 0) {
-            currentPage--;
-            renderImages();
+          currentPage--;
+          renderImages();
         }
-    }
-    
-    // Load the first page when the site opens
-    document.addEventListener('DOMContentLoaded', renderImages);
+      }
+      
+      document.addEventListener('DOMContentLoaded', renderImages);
