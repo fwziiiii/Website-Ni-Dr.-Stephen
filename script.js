@@ -1,6 +1,6 @@
 function revealOnScroll() {
     // For the animation everytime magscroll, dili apil ang footer ug navigation bar
-    const elements = document.querySelectorAll('body *:not(nav):not(footer):not(nav *):not(footer *)');
+    const elements = document.querySelectorAll('.main-page *, .other-page *');
 
     elements.forEach(el => {
         el.classList.add('reveal-on-scroll');
@@ -97,3 +97,37 @@ function revealOnScroll() {
       }
       
       document.addEventListener('DOMContentLoaded', renderImages);
+      
+
+// SLIDE SHOW SCRIPTTT
+
+const slideshows = {
+  box1: ["Media/biodiver1.jpg", "Media/biodiver2.jpg", "Media/biodiver3.jpg"],
+  box2: ["Media/reef1.jpg", "Media/reef2.jpg", "Media/reef3.jpg"],
+  box3: ["Media/polution1.jpg", "Media/polution2.jpg", "Media/polution3.jpg"]
+};
+
+for (const [id, images] of Object.entries(slideshows)) {
+  let index = 1;
+  const box = document.getElementById(id);
+  const bgSlide = box.querySelector('.bg-slide');
+
+  function updateBackground() {
+    // Fade out
+    bgSlide.style.opacity = 0;
+
+    setTimeout(() => {
+      // Change image after fade out
+      bgSlide.style.backgroundImage = `url('${images[index]}')`;
+      index = (index + 1) % images.length;
+
+      // Fade in
+      bgSlide.style.opacity = 1;
+    }, 800); // Match this to your CSS transition time
+  }
+
+  // Initialize
+  bgSlide.style.backgroundImage = `url('${images[0]}')`;
+  setInterval(updateBackground, 5000);
+}
+
