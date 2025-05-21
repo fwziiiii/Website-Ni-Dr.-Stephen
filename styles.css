@@ -716,7 +716,7 @@ section p {
 .floating-image {
   position: fixed;
   top: 190px;     /* Fixed distance from top */
-  left: 720px;    /* Fixed distance from left */
+  left: 570px;    /* Fixed distance from left */
   width: 800px;
   z-index: 1000;
   pointer-events: none;
