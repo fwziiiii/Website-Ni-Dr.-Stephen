@@ -131,51 +131,79 @@ footer {
 
 .imagephoto {
     position: relative;
-    height: 380px;
-    width: 350px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .section-box {
     font-size: 50px;
     text-align: center;
-    background-color: #272829;
+    background-image: url('Media/underwater.jpg');
+    background-size: cover;         /* Ensures the image covers the whole box */
+    background-position: center;    /* Centers the image */
     color: white;
     border-radius: 40px;
     width: 1200px;
-    height: 400px;
     padding: 15px;
 }
 
 .section-multiplebox {
-    display: flex;
-    color: white;
-    border-radius: 40px;
-    width: 1000px;
-    height: 400px;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 100px;
 }
+
 .section-multiplebox2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     color: white;
     border-radius: 40px;
-    width: 900px;
-    height: 1000px; 
     justify-items: center;
     align-items: center;
+    row-gap: 30px; /* Adds vertical space between rows */
+    /* Or use gap: 30px; to add space between both rows and columns */
 }
 
 .section-smallbox {
-    background-color: #272829;
-    display: flex;
-    color: white;
-    border-radius: 40px;
-    width: 250px;
-    height: 180px;
-    padding: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  height: 180px;
+  border-radius: 40px;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.section-smallbox p {
+  position: relative; /* stay on top */
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+
+.bg-slide {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 40px;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+  z-index: 1;
 }
 /* 
 section {
@@ -188,24 +216,24 @@ section {
     flex-direction: column;
 } */
 
-section h2 {
+/* section h2 {
     font-size: 32px;
     margin-bottom: 20px;
 }
 
 section p {
     font-size: 18px;
-}
+} */
 
 .reveal-on-scroll {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .reveal-on-scroll.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .site-footer {
@@ -295,22 +323,22 @@ section p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 50px;
   }
 
-  .AboutUs-part {
+  .Faculty-part {
     padding-top: 150px;
     padding-bottom: 100px;
   }
 
-  .Faculty-party {
-    padding-top: 150px;
+  .AboutUs-part {
+    padding-top: 250px;
     padding-bottom: 100px;
   }
 
   .Media-part {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150;
+    padding-bottom: 100;
   }
 
   .AboutUs-part h2 {
@@ -322,7 +350,7 @@ section p {
   }
 
   .main-content {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     max-width: 1000px;
     text-align: center;
   }
@@ -356,6 +384,18 @@ section p {
   .highlight {
     color: #a78bfa; /* Purple highlight */
   }
+
+  .highlight2 {
+  animation: colorChange 1s infinite alternate;
+}
+
+@keyframes colorChange {
+  0%   { color: #a78bfa; }   /* Purple */
+  25%  { color: #f59e0b; }   /* Amber */
+  50%  { color: #10b981; }   /* Green */
+  75%  { color: #3b82f6; }   /* Blue */
+  100% { color: #a78bfa; }   /* Back to Purple */
+}
   
   .intro {
     font-size: 18px;
@@ -577,25 +617,120 @@ section p {
     filter: brightness(.5) saturate(0) contrast(1.2) blur(1px);
 }
 
+/* THIS IS NUMBER 2 */
+ .photo2 {
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    width: 400x;
+    height: 220px;
+    max-width: 400px;
+    max-height: 220px;
+    transition: .3s ease;
+ }
+
+.photo2::before {
+    content: "";
+    display: block;
+    padding: 150%;
+    width: 500px;
+}
+.photo-background2 {
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 350px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+}
+
+.photo2:hover .photo-background2 {
+    transform: scale(1.15) translateZ(0);
+    background-size: 260px;
+}
+
+.photo-container2:hover .photo2:not(:hover) {
+    transform: scale(.9);
+}
+
+.photo-container2:hover > .photo2:not(:hover) .photo-background2,
+.photo-container2:hover > .photo2:not(:hover) {
+    filter: brightness(.5) saturate(0) contrast(1.2) blur(1px);
+}
+
+/* PHOTO 3 TO */
+.photo3 {
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    width: 220px;
+    height: 400px;
+    max-width: 220px;
+    max-height: 400px;
+    transition: .3s ease;
+ }
+
+.photo3::before {
+    content: "";
+    display: block;
+    padding: 150%;
+    width: 500px;
+}
+.photo-background3 {
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 350px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+}
+
+.photo3:hover .photo-background3 {
+    transform: scale(1.15) translateZ(0);
+    background-size: 260px;
+}
+
+.photo-container3:hover .photo3:not(:hover) {
+    transform: scale(.9);
+}
+
+.photo-container3:hover > .photo3:not(:hover) .photo-background3,
+.photo-container3:hover > .photo3:not(:hover) {
+    filter: brightness(.5) saturate(0) contrast(1.2) blur(1px);
+}
 
 .floating-image {
-  position: fixed; /* Use 'absolute' if you want it relative to a parent */
-  top: 8vw;
-  left:42vw; /* 70% of viewport width */
+  position: fixed;
+  top: 190px;     /* Fixed distance from top */
+  left: 720px;    /* Fixed distance from left */
   width: 800px;
   z-index: 1000;
-  pointer-events: none; /* Optional: lets clicks pass through */
-  opacity: 0.8; /* Optional: some transparency */
+  pointer-events: none;
+  opacity: 0.8;
 }
 
 .floating-image2 {
-  position: fixed; /* Use 'absolute' if you want it relative to a parent */
-  top: 21vw;
-  left:19vw; /* 70% of viewport width */
+  position: fixed;
+  top: 620px;     /* Adjust as needed */
+  left: 300px;    /* Adjust as needed */
   width: 400px;
   z-index: 1000;
-  pointer-events: none; /* Optional: lets clicks pass through */
-  opacity: 0.8; /* Optional: some transparency */
+  pointer-events: none;
+  opacity: 0.8;
 }
 
 
