@@ -1,6 +1,7 @@
 function revealOnScroll() {
-    // For the animation everytime magscroll, dili apil ang footer ug navigation bar
-    const elements = document.querySelectorAll('.main-page *, .other-page *');
+    const elements = document.querySelectorAll(
+        '.main-page .section-box, .main-content *, .AboutUs-part, .AboutUs-part *, .AboutUs-part2 *, .btn-primary, .other-page *'
+    );
 
     elements.forEach(el => {
         el.classList.add('reveal-on-scroll');
@@ -18,11 +19,12 @@ function revealOnScroll() {
     elements.forEach(element => {
         observer.observe(element);
     });
-    }
+}
 
-    document.addEventListener('DOMContentLoaded', () => {
-      revealOnScroll();
-    });
+document.addEventListener('DOMContentLoaded', () => {
+    revealOnScroll();
+});
+
 
     // For dropdown buttons
     function toggleDropdown() {
@@ -104,7 +106,13 @@ function revealOnScroll() {
 const slideshows = {
   box1: ["Media/biodiver1.jpg", "Media/biodiver2.jpg", "Media/biodiver3.jpg"],
   box2: ["Media/reef1.jpg", "Media/reef2.jpg", "Media/reef3.jpg"],
-  box3: ["Media/polution1.jpg", "Media/polution2.jpg", "Media/polution3.jpg"]
+  box3: ["Media/polution1.jpg", "Media/polution2.jpg", "Media/polution3.jpg"],
+  box4: ["Media/polution1.jpg", "Media/overfishing.jpg", "Media/oilspill.jpg", "Media/polution2.jpg"],
+  box5: ["Media/biodiver1.jpg", "Media/biodiversity.jpeg", "Media/biodiversity1.jpg", "Media/biodiver2.jpg"],
+  box6: ["Media/biodiversity2.png", "Media/biodiver3.jpg", "Media/biodiversity3.jpg"],
+  box7: ["Media/studying.jpg", "Media/medicine.jpg", "Media/scientist.jpg"],
+  box8: ["Media/ocean2.jpg", "Media/carboncycle.png", "Media/oceanclimate.jpg"],
+  box9: ["Media/protectocean.jpg", "Media/savetheocean.jpg", "Media/oceanprotect.jpg"]
 };
 
 for (const [id, images] of Object.entries(slideshows)) {
