@@ -146,7 +146,7 @@ footer {
     color: white;
     border-radius: 40px;
     width: 1200px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .section-multiplebox {
@@ -167,7 +167,7 @@ footer {
     border-radius: 40px;
     justify-items: center;
     align-items: center;
-    row-gap: 30px; /* Adds vertical space between rows */
+    row-gap: 20px; /* Adds vertical space between rows */
     /* Or use gap: 30px; to add space between both rows and columns */
 }
 
@@ -332,18 +332,20 @@ section p {
   }
 
   .AboutUs-part {
-    padding-top: 250px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    /* padding-bottom: 100px; */
+  }
+
+  .AboutUs-part h2, .AboutUs-part2 h2 {
+    text-align: justify;
   }
 
   .Media-part {
-    padding-top: 150;
-    padding-bottom: 100;
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
 
-  .AboutUs-part h2 {
-    text-align: justify;
-  }
+
 
   .p-left {
     text-align: justify;
@@ -381,9 +383,12 @@ section p {
     margin-bottom: 20px;
   }
   
-  .highlight {
-    color: #a78bfa; /* Purple highlight */
-  }
+.highlight {
+  background: linear-gradient(to right, #00C0CB, #8A2BE2); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+}
 
   .highlight2 {
   animation: colorChange 1s infinite alternate;
@@ -533,6 +538,14 @@ section p {
     background: #333;
   }
 
+  .member-photo2 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background: #333;
+  }
+
   .member-info {
     flex: 1;
   }
@@ -540,7 +553,10 @@ section p {
   .member-info h2 {
     font-size: 20px;
     margin-top: 0;
-    color: #a78bfa;
+    background: linear-gradient(to right, #00C0CB, #8A2BE2); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
   }
 
   .member-info small {
@@ -618,7 +634,7 @@ section p {
 }
 
 /* THIS IS NUMBER 2 */
- .photo2 {
+ /* .photo2 {
     position: relative;
     overflow: hidden;
     list-style: none;
@@ -663,60 +679,12 @@ section p {
 .photo-container2:hover > .photo2:not(:hover) .photo-background2,
 .photo-container2:hover > .photo2:not(:hover) {
     filter: brightness(.5) saturate(0) contrast(1.2) blur(1px);
-}
-
-/* PHOTO 3 TO */
-.photo3 {
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    width: 220px;
-    height: 400px;
-    max-width: 220px;
-    max-height: 400px;
-    transition: .3s ease;
- }
-
-.photo3::before {
-    content: "";
-    display: block;
-    padding: 150%;
-    width: 500px;
-}
-.photo-background3 {
-    position: absolute;
-    background-repeat: no-repeat;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
-    border-radius: 20px;
-    background-size: 350px;
-    background-position: center;
-    filter: brightness(.9) saturate(1) contrast(1);
-    transform-origin: bottom;
-    transform: scale(1) translateZ(0);
-    transition: .3s ease;
-}
-
-.photo3:hover .photo-background3 {
-    transform: scale(1.15) translateZ(0);
-    background-size: 260px;
-}
-
-.photo-container3:hover .photo3:not(:hover) {
-    transform: scale(.9);
-}
-
-.photo-container3:hover > .photo3:not(:hover) .photo-background3,
-.photo-container3:hover > .photo3:not(:hover) {
-    filter: brightness(.5) saturate(0) contrast(1.2) blur(1px);
-}
+} */
 
 .floating-image {
   position: fixed;
-  top: 190px;     /* Fixed distance from top */
-  left: 570px;    /* Fixed distance from left */
+  top: -280px;     /* Fixed distance from top */
+  left: 450px;    /* Fixed distance from left */
   width: 800px;
   z-index: 1000;
   pointer-events: none;
