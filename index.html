@@ -10,15 +10,15 @@
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <img src="Media/logo.png" alt="Logo" class="logo-img">
-                <span class="website-name">Website ni Dr. Stephen</span>
+                <img src="Media/logo2.png" alt="Logo" class="logo-img">
+                <span class="website-name" >The Coral Council</span>
             </div>
             <div class="menu">
                 <a href="otherwebsite.html">Check out my other website</a>
                 <button class="menu-btn" onclick="toggleDropdown()">&#61;</button>
                 <div class="dropdown">
                     <a href="index.html">Home</a>
-                    <a href="index.html#faculty">Faculty</a>
+                    <a href="index.html#faculty">The Council</a>
                     <a href="index.html#about-us">About Us</a>
                     <a href="index.html#media">Media</a>
                     <a href="contact.html">Contact Us</a>
@@ -37,32 +37,36 @@
      </div>
     <div class="main-content">
       
-      <section id="faculty">
-        <div class="Faculty-part">
-          <h1>Meet the Coral <span class="highlight">Council</span></h1>
-          <p class="intro">Welcome to the vibrant heart of our marine biology community — the Coral Council! These brilliant minds are the guardians of knowledge, the mentors of future ocean explorers, and the guiding lights beneath the waves. With expertise as deep as the sea and a passion for discovery, they’ve helped shape the tides of learning and innovation.</p>
-          <p class="intro">From decoding dolphin chatter to nurturing coral conservation efforts, each member of the Coral Council brings a unique spark to our academic reef. Get to know the educators who make waves — both in the classroom and out at sea.</p>
+        <div class="Faculty-part" id="faculty">
+          <h1>Meet the Coral <span class="highlight" >Council</span></h1>
+          <p class="intro">Ahoy there! We are a trio of passionate marine biology students who go by the name <b><span class="highlight">The Coral Council</span></b> — a small crew with big dreams and saltwater in our veins. United by curiosity and a love for ocean life, we’ve dedicated ourselves to exploring the deep, protecting marine ecosystems, and sharing the wonders of the sea with anyone willing to dive in with us.</p>
+          <p class="intro">Whether it's decoding dolphin chatter, documenting coral bleaching, or just geeking out over plankton under a microscope, we bring our unique strengths together to make waves in and out of the classroom.</p>
+          <p class="intro">From tidepool talks to research dives, every adventure fuels our mission to better understand the ocean — and inspire others to care for it too. So come aboard and get to know us, starting with <b><span class="highlight">Dr. Stephen Louise Escanilla</span></b> and the rest of our salty crew — together, we are The Coral Council!</p>
           <button class="btn-primary" onclick="window.location.href='faculty.html';">Get to know us</button>
           <img src="Media/corals.png" class="floating-image2" alt="Decoration">
         </div>
-      </section>
 
-      <section id="about-us">
-        <div class="AboutUs-part">
+        <div class="AboutUs-part" id="about-us">
           <h1>Dive into the <span class="highlight">Unkown</span></h1>
           <p class="intro">Beneath the shimmer of the waves lies a world bursting with wonder — a living tapestry of color, movement, and mystery. Marine Biology is your compass to this hidden realm, where glowing jellyfish drift like lanterns, coral reefs hum with life, and ancient sea creatures still roam the depths.</p>
           <p class="intro">As a marine biologist in the making, you won’t just study the ocean — you’ll listen to its rhythms, protect its fragile beauty, and unlock its secrets one discovery at a time. So take a deep breath, grab your curiosity, and dive in the ocean is waiting for you.</p>
+
           <div class="section-multiplebox">
-            <div class="section-smallbox">
-                <p>This is your home page. Edit it whatever you like.</p>
+            <div class="section-smallbox" id="box1">
+              <div class="bg-slide"></div>
+              <p>Marine Biodiversity and Species Discovery</p>
             </div>
-            <div class="section-smallbox">
-                <p>This is your home page. Edit it whatever you like.</p>
+            <div class="section-smallbox" id="box2">
+              <div class="bg-slide"></div>
+              <p>Coral Reef Conservation</p>
             </div>
-            <div class="section-smallbox">
-                <p>This is your home page. Edit it whatever you like.</p>
+            <div class="section-smallbox" id="box3">
+              <div class="bg-slide"></div>
+              <p>Ocean Pollution and Its Impact on Marine Life</p>
             </div>
           </div>
+
+          <h1>Bachelor of Science in <span class="highlight2">Marine Biology</span></h1>
 
           <h2>What is <span class="highlight">BS in Marine Biology?</span></h2>
           <p class="intro p-left">A Bachelor of Science in Marine Biology is an undergraduate degree focused on the study of marine life and ocean ecosystems. It combines biology, oceanography, ecology, chemistry, and environmental science to explore the rich diversity of organisms that inhabit our seas — from microscopic plankton to massive whales, and everything in between. Students in this program gain hands-on experience through lab work, field research, and even dives into coastal or deep-sea environments.</p>
@@ -72,24 +76,38 @@
           
           <div class="section-multiplebox2">
               <p class="intro">It helps us understand and protect marine ecosystems threatened by pollution, climate change, and overfishing.</p>
-              <img src="Media/marineecosystem.jpg" alt="Dr. John Doe" class="imagephoto">
-              <img src="Media/marine2.jpg" alt="Dr. John Doe" class="imagephoto">
+              <div class="photo2">
+                <div class="photo-background2" style="background-image: url(Media/marineecosystem.jpg);"></div>
+              </div>
+              <div class="photo2">
+                <div class="photo-background2" style="background-image: url(Media/marine2.jpg);"></div>
+              </div>
               <p class="intro">It contributes to medical and scientific discoveries, such as new antibiotics or sustainable food sources.</p>
               <p class="intro">It deepens our understanding of Earth’s climate systems and how human activity affects them. In short: Marine biology is at the heart of ocean conservation and the health of our planet.</p>
-              <img src="Media/climate.jpg" alt="Dr. John Doe" class="imagephoto">
+              <div class="photo2">
+                <div class="photo-background2" style="background-image: url(Media/climate.jpg);"></div>
+              </div>
+          </div>
+          
+          <h1 style="margin-top: 130px">Why BS in <span class="highlight">Marine Biology?</span></h1>
+
+          <div class="section-multiplebox2">
+              <img src="Media/Stephen2.jpg" class="imagephoto" alt="Decoration">
+              <p class="intro"><strong>Dr. Stephen Louise: </strong>First and foremost, we've always been interested in animals—whether they live on land, in water, or in the sky. I’ve been eager to understand the environments they inhabit. When it came time to choose a program, I was initially more familiar with BS biology than with marine biology specifically. But as I explored further, I discovered that marine biology goes beyond just studying marine animals—it also covers environmental aspects, conservation, and ecosystem dynamics. This broader perspective, combined with our passion, we are inspired to go with this program</p>
+              <img src="Media/Fawzan2.jpg" class="imagephoto" alt="Decoration">
+              <p class="intro"><strong>Engr. Fawzan Alsaber: </strong>From a young age, I’ve always been fascinated by the diversity of life around us—whether it’s creatures roaming the forests, thriving in rivers and oceans, or soaring through the skies. I wanted to dive deeper into understanding the unique habitats these animals call home. Initially, I was more acquainted with general biology programs, but as I learned more about marine biology, I realized it’s much more than just studying sea creatures. It encompasses the health of entire ecosystems, the impact of human activities, and the importance of preserving delicate marine environments. This comprehensive approach, combined with my genuine enthusiasm for nature, motivated me to pursue marine biology as my chosen field of study.</p>
+              <img src="Media/Devibar.jpg" class="imagephoto" alt="Decoration">
+              <p class="intro"><strong>Dr. Josua Jadraque: </strong>I’ve always been drawn to the natural world, fascinated by the incredible variety of animals that inhabit every corner of the Earth—on land, in the oceans, and up in the air. My curiosity about how these creatures survive and interact with their environments grew stronger over time. While I initially leaned toward a general biology path, exploring marine biology opened my eyes to its wider scope. It’s not just about the animals themselves, but also about understanding marine ecosystems, addressing environmental challenges, and promoting conservation efforts. This holistic view, combined with my passion for wildlife, inspired me to commit to studying marine biology.</p>
           </div>
         </div> 
-      </section>
 
-      <section id="media">
-        <div class="Media-part">
+        <div class="Media-part" id="media">
           <h1>Explore the Digital <span class="highlight">Reef</span></h1>
           <p class="intro">Welcome to the Digital Reef — a vibrant hub where science, stories, and creativity come to life! Dive into a colorful ecosystem of media content, from ocean documentaries and faculty features to behind-the-scenes dev moments and quirky sea-worthy memes.</p>
           <p class="intro">Just like a real reef, this space is full of surprises — rich with knowledge, teeming with inspiration, and always evolving. So swim around, click through, and discover the pulse of our marine-minded community, one byte at a time.</p>
           <button class="btn-primary" onclick="window.location.href='media.html';">Explore</button>
       </div>  
-      </section>
-
+      
     </div>
   </div>
 
@@ -99,13 +117,13 @@
           <!-- Top Section -->
           <div class="footer-top">
             <div class="footer-logo">
-              <img src="Media/logo.png" alt="Logo">
-              <span>Website ni Dr. Stephen</span>
+              <img src="Media/logo2.png" alt="Logo">
+              <span>The Coral Council</span>
             </div>
             <nav class="footer-nav">
               <a href="#">Home</a>
+              <a href="#faculty">The Council</a>
               <a href="#about-us">About Us</a>
-              <a href="#faculty">Faculty</a>
               <a href="#media">Media</a>
               <a href="contact.html">Contact</a>
             </nav>
@@ -115,7 +133,7 @@
       
           <!-- Bottom Section -->
           <div class="footer-bottom">
-            <div class="footer-credits">Made by Group ni Dr. Stephen | Powered by Robust</div>
+            <div class="footer-credits">Made by <span class="highlight2">The Coral Council</span> | Powered by Robust</div>
             <div class="footer-links">
               <a href="#">Privacy Policy</a>
               <a href="#">Terms & Conditions</a>
