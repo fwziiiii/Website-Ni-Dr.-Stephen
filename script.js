@@ -1,6 +1,6 @@
 function revealOnScroll() {
     const elements = document.querySelectorAll(
-        '.main-page .section-box, .main-content *, .AboutUs-part, .AboutUs-part *, .AboutUs-part2 *, .btn-primary, .other-page *'
+        '.main-page .section-box, .main-content *, .AboutUs-part, .AboutUs-part *, .AboutUs-part2, .AboutUs-part2 *, .btn-primary, .other-page *'
     );
 
     elements.forEach(el => {
@@ -112,7 +112,13 @@ const slideshows = {
   box6: ["Media/biodiversity2.png", "Media/biodiver3.jpg", "Media/biodiversity3.jpg"],
   box7: ["Media/studying.jpg", "Media/medicine.jpg", "Media/scientist.jpg"],
   box8: ["Media/ocean2.jpg", "Media/carboncycle.png", "Media/oceanclimate.jpg"],
-  box9: ["Media/protectocean.jpg", "Media/savetheocean.jpg", "Media/oceanprotect.jpg"]
+  box9: ["Media/protectocean.jpg", "Media/savetheocean.jpg", "Media/oceanprotect.jpg"],
+  box10: ["Media/phytoplankton.jpg", "Media/phytoplankton.png", "Media/phytoplankton2.png"],
+  box11: ["Media/livelihood.jpg", "Media/livelihood2.jpg", "Media/livelihood3.jpg"],
+  box12: ["Media/industry.jpg", "Media/maritime.jpeg", "Media/offshore.jpg"],
+  box13: ["Media/carbonsink.png", "Media/kelp.jpg", "Media/seagrassmea.jpg", "Media/bluecarbon.png"],
+  box14: ["Media/reef1.jpg", "Media/mangroves.png", "Media/mangroves.jpg", "Media/seagrassbeds.jpg"],
+  box15: ["Media/weather.jpg", "Media/weather2.jpg", "Media/oceanclimate.jpg", "Media/argi.jpg"]
 };
 
 for (const [id, images] of Object.entries(slideshows)) {
