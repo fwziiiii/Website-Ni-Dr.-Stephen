@@ -331,12 +331,13 @@ section p {
     padding-bottom: 100px;
   }
 
-  .AboutUs-part {
+  .AboutUs-part, .AboutUs-part3, .AboutUs-part4 {
     padding-top: 150px;
     /* padding-bottom: 100px; */
   }
 
-  .AboutUs-part h2, .AboutUs-part2 h2 {
+
+  .AboutUs-part h2, .AboutUs-part2 h2, .AboutUs-part3 h2, .AboutUs-part4 h2, .AboutUs-part4 h4{
     text-align: justify;
   }
 
