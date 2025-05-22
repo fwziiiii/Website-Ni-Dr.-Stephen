@@ -124,7 +124,7 @@ const slideshows = {
   box11: ["Media/livelihood.jpg", "Media/livelihood2.jpg", "Media/livelihood3.jpg"],
   box12: ["Media/industry.jpg", "Media/maritime.jpeg", "Media/offshore.jpg"],
   box13: ["Media/carbonsink.png", "Media/kelp.jpg", "Media/seagrassmea.jpg", "Media/bluecarbon.png"],
-  box14: ["Media/reef1.jpg", "Media/mangroves.png", "Media/mangroves.jpg", "Media/seagrassbeds.jpg"],
+  box14: ["Media/reef1.jpg", "Media/mangroves.png", "Media/mangroves.jpg", "Media/seagrassbeds.jpeg"],
   box15: ["Media/weather.jpg", "Media/weather2.jpg", "Media/oceanclimate.jpg", "Media/agri.jpg"],
   box16: ["Media/Invertebrates.jpg", "Media/Invertebrates2.jpg", "Media/Invertebrates3.jpg"],
   box17: ["Media/fresh.jpg", "Media/water.jpg", "Media/biodiversity.jpeg"],
