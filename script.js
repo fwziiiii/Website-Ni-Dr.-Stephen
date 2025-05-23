@@ -160,83 +160,83 @@ for (const [id, images] of Object.entries(slideshows)) {
 
 
 // BUBBLES WEEEE
-// const canvas = document.getElementById('bubbleCanvas');
-// const ctx = canvas.getContext('2d');
+const canvas = document.getElementById('bubbleCanvas');
+const ctx = canvas.getContext('2d');
 
-// function resizeCanvas() {
-//   canvas.width = document.body.scrollWidth;
-//   canvas.height = document.body.scrollHeight;
-// }
-// window.addEventListener('resize', () => {
-//   resizeCanvas();
-//   drawAllBubbles(); // Redraw bubbles after resize
-// });
-// resizeCanvas();
+function resizeCanvas() {
+  canvas.width = document.body.scrollWidth;
+  canvas.height = document.body.scrollHeight;
+}
+window.addEventListener('resize', () => {
+  resizeCanvas();
+  drawAllBubbles(); // Redraw bubbles after resize
+});
+resizeCanvas();
 
-// // Bubble class with realistic appearance
-// class Bubble {
-//   constructor() {
-//     this.x = Math.random() * canvas.width;
-//     this.y = Math.random() * canvas.height;
-//     this.radius = 15 + Math.random() * 35; // Bigger bubbles
-//     this.opacity = 0.1 + Math.random() * 0.2;
-//   }
+// Bubble class with realistic appearance
+class Bubble {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.radius = 15 + Math.random() * 35; // Bigger bubbles
+    this.opacity = 0.1 + Math.random() * 0.2;
+  }
 
-//   draw() {
-//   // Create a radial gradient with rainbow-like colors and transparency
-//   const gradient = ctx.createRadialGradient(
-//     this.x, this.y, this.radius * 0.05,
-//     this.x, this.y, this.radius
-//   );
+  draw() {
+  // Create a radial gradient with rainbow-like colors and transparency
+  const gradient = ctx.createRadialGradient(
+    this.x, this.y, this.radius * 0.05,
+    this.x, this.y, this.radius
+  );
 
-//   gradient.addColorStop(1, `rgba(255, 255, 255, ${this.opacity + 0.3})`); // bright center
-//   gradient.addColorStop(0.8, `rgba(135, 206, 250, ${this.opacity * 0.7})`); // soft blue
-//   gradient.addColorStop(0.7, `rgba(255, 182, 193, ${this.opacity * 0.2})`); // pinkish
-//   gradient.addColorStop(0.6, `rgba(144, 238, 144, ${this.opacity * 0.3})`); // light green
-//   gradient.addColorStop(0.8, `rgba(255, 255, 224, ${this.opacity * 0.5})`); // pale yellow
-//   gradient.addColorStop(0, `rgba(255, 255, 255, 0)`); // transparent edge
+  gradient.addColorStop(1, `rgba(255, 255, 255, ${this.opacity + 0.3})`); // bright center
+  gradient.addColorStop(0.8, `rgba(135, 206, 250, ${this.opacity * 0.7})`); // soft blue
+  gradient.addColorStop(0.7, `rgba(255, 182, 193, ${this.opacity * 0.2})`); // pinkish
+  gradient.addColorStop(0.6, `rgba(144, 238, 144, ${this.opacity * 0.3})`); // light green
+  gradient.addColorStop(0.8, `rgba(255, 255, 224, ${this.opacity * 0.5})`); // pale yellow
+  gradient.addColorStop(0, `rgba(255, 255, 255, 0)`); // transparent edge
 
-//   // Fill the bubble circle with the gradient
-//   ctx.beginPath();
-//   ctx.fillStyle = gradient;
-//   ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-//   ctx.fill();
+  // Fill the bubble circle with the gradient
+  ctx.beginPath();
+  ctx.fillStyle = gradient;
+  ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+  ctx.fill();
 
-//   // Draw a thin white rim around bubble edge (soft, semi-transparent)
-//   ctx.beginPath();
-//   ctx.strokeStyle = `rgba(255, 255, 255, ${this.opacity * 0.6})`;
-//   ctx.lineWidth = 2;
-//   ctx.shadowColor = 'rgba(255, 255, 255, 0.4)';
-//   ctx.shadowBlur = 6;
-//   ctx.arc(this.x, this.y, this.radius - 1, 0, Math.PI * 2);
-//   ctx.stroke();
+  // Draw a thin white rim around bubble edge (soft, semi-transparent)
+  ctx.beginPath();
+  ctx.strokeStyle = `rgba(255, 255, 255, ${this.opacity * 0.6})`;
+  ctx.lineWidth = 2;
+  ctx.shadowColor = 'rgba(255, 255, 255, 0.4)';
+  ctx.shadowBlur = 6;
+  ctx.arc(this.x, this.y, this.radius - 1, 0, Math.PI * 2);
+  ctx.stroke();
 
-//   // Draw a small white highlight spot (glint) with a soft glow
-//   const highlightX = this.x - this.radius * 0.3;
-//   const highlightY = this.y - this.radius * 0.3;
-//   const highlightRadius = this.radius * 0.15;
+  // Draw a small white highlight spot (glint) with a soft glow
+  const highlightX = this.x - this.radius * 0.3;
+  const highlightY = this.y - this.radius * 0.3;
+  const highlightRadius = this.radius * 0.15;
 
-//   let highlightGradient = ctx.createRadialGradient(
-//     highlightX, highlightY, 0,
-//     highlightX, highlightY, highlightRadius
-//   );
-//   highlightGradient.addColorStop(0, `rgba(255, 255, 255, ${this.opacity})`);
-//   highlightGradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+  let highlightGradient = ctx.createRadialGradient(
+    highlightX, highlightY, 0,
+    highlightX, highlightY, highlightRadius
+  );
+  highlightGradient.addColorStop(0, `rgba(255, 255, 255, ${this.opacity})`);
+  highlightGradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
-//   ctx.beginPath();
-//   ctx.fillStyle = highlightGradient;
-//   ctx.arc(highlightX, highlightY, highlightRadius, 0, Math.PI * 2);
-//   ctx.fill();
-// }
-// }
+  ctx.beginPath();
+  ctx.fillStyle = highlightGradient;
+  ctx.arc(highlightX, highlightY, highlightRadius, 0, Math.PI * 2);
+  ctx.fill();
+}
+}
 
-// // Generate many bubbles
-// const bubbles = Array.from({ length: 150 }, () => new Bubble());
+// Generate many bubbles
+const bubbles = Array.from({ length: 150 }, () => new Bubble());
 
-// // Draw once (static)
-// function drawAllBubbles() {
-//   ctx.clearRect(0, 0, canvas.width, canvas.height);
-//   bubbles.forEach(bubble => bubble.draw());
-// }
+// Draw once (static)
+function drawAllBubbles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  bubbles.forEach(bubble => bubble.draw());
+}
 
-// drawAllBubbles();
+drawAllBubbles();
